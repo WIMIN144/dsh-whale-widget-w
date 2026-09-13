@@ -109,7 +109,7 @@ dsh plugin --profile web add github:WIMIN144/dsh-whale-widget-w
 dsh plugin --profile web add github:WIMIN144/DSH#<分支名>
 ```
 
-> `github:` 方式直接从 GitHub 拉取仓库安装，**不需要 npm 账号、也不需要发布到 npm**；npm 安装是未来可选的一条路，本仓库暂未使用。
+> `github:` 方式直接从 GitHub 拉取仓库安装；npm 安装是未来可选的一条路，本仓库暂未使用。
 
 本地开发安装：
 
