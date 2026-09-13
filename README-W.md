@@ -65,15 +65,20 @@
 - 常驻「峰谷」：当前时段名（空闲=绿 / 梁文峰=红）+ 下一时段倒计时，逐秒跳动
 - **谷时提醒**：谷时最后 30 分钟自动切提醒视图（「梁文谷时段 即将结束」），峰时开始自动解除
 - **峰时锁定**：峰时隐藏发送按钮 + 拦截 Enter 发送，气泡在「锁定中」与「距梁文谷倒计时」两视图间轮播（间隔 = 菜单「轮播」秒数）
+  - 仅锁定 **DeepSeek 模型**：其他模型（如 GLM）完全不受影响，峰时照常调用
 - 时段叫法点击气泡轮换：默认 / 梁文峰谷 / 峰峰
 
-![峰谷视图：梁文峰 + 倒计时](docs/screenshot-peak-view.png)
+**峰时下两种模型的对比**（锁定只针对 DeepSeek）：
 
-![峰谷视图：空闲时段 + 谷时倒计时](docs/screenshot-valley-view.png)
+| 非 DeepSeek 模型（GLM）：不锁定，正常使用 | DeepSeek 模型：峰时锁定中 |
+|---|---|
+| ![峰时 × GLM：不锁定正常使用](docs/screenshot-peak-view.png) | ![峰时 × DeepSeek：锁定中](docs/screenshot-peak-lock.png) |
 
-![谷时提醒：即将结束](docs/screenshot-valley-remind.png)
+**谷时两种状态对比**：
 
-![峰时锁定视图](docs/screenshot-peak-lock.png)
+| 空闲时段：谷时倒计时 | 最后 30 分钟：谷时提醒 |
+|---|---|
+| ![空闲时段：谷时倒计时](docs/screenshot-valley-view.png) | ![谷时提醒：即将结束](docs/screenshot-valley-remind.png) |
 
 ### 5. 三路大小调节 + 恢复默认
 
