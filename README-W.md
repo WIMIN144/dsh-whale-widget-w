@@ -107,7 +107,7 @@
 # 独立仓库
 dsh plugin --profile web add github:WIMIN144/dsh-whale-widget-w
 # 或 monorepo 分支式
-dsh plugin --profile web add github:WIMIN144/DSH#<分支名>
+dsh plugin --profile web add github:WIMIN144/DSH#whale
 ```
 
 > `github:` 方式直接从 GitHub 拉取仓库安装；npm 安装是未来可选的一条路，本仓库暂未使用。
